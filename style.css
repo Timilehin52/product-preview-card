@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+:root {
+  --Green500: hsl(158, 36%, 37%);
+  --Green700: hsl(158, 42%, 18%);
+
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "Montserrat", "Fraunces", serif;
+  background-color: var(--Cream);
+  max-width: 1440px;
+}
+.mainer {
+  display: flex;
+  width: 650px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: var(--White);
+  align-content: center;
+  margin-top: 20px;
+}
+.will {
+  width: 50%;
+
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  display: block;
+}
+.mobil {
+  display: none;
+}
+.none {
+  width: 50%;
+  padding-left: 25px;
+  margin-bottom: 18px;
+  padding: 15px;
+}
+.cold {
+  color: var(--Grey);
+  font-weight: lighter;
+}
+.s1 {
+  font-size: 30px;
+  color: var(--Black);
+  font-family: "Fraunces", serif;
+}
+.s2 {
+  color: var(--Grey);
+  letter-spacing: 0.5px;
+}
+.s3 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  color: var(--Green500);
+}
+strike {
+  font-size: 18px;
+  color: var(--Grey);
+}
+button {
+  border-radius: 15px;
+  width: 300px;
+  border: none;
+  background-color: var(--Green500);
+  color: var(--White);
+  padding: 15px;
+  margin-top: 19px;
+  align-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--Green700);
+}
+@media (max-width: 770px) {
+  .mainer {
+    flex-direction: column;
+    width: 375px;
+  }
+  .will {
+    display: none;
+  }
+  .mobil {
+    display: block;
+    width: 375px;
+  }
+  .s1 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .s2 {
+    font-size: 20px;
+  }
+  .none {
+    font-size: 20px;
+    padding: 25px;
+  }
+
+  button {
+    width: 320px;
+    font-size: 14px;
+    margin: auto;
+  }
+}
